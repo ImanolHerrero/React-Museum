@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import SearchAppBar from './components/navbar';
+import Cards from './components/cards';
+import { createTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#000000'
+    }
+  },
+  typography: {
+    fontFamily: 'Helvetica'
+  }
+})
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <SearchAppBar />
+        <Cards />
+      </ThemeProvider>
+    </>
   );
 }
 
