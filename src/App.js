@@ -3,6 +3,7 @@ import SearchAppBar from './components/navbar';
 import Cards from './components/cards';
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/core/styles';
+import Welcome from './components/welcome';
 
 const theme = createTheme({
   palette: {
@@ -20,6 +21,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <SearchAppBar />
+        <Welcome />
         <Cards />
       </ThemeProvider>
     </>
