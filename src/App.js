@@ -8,11 +8,14 @@ import Welcome from './components/welcome.jsx';
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#202020"
+      main: "#036666"
+    },
+    secondary: {
+      main: "#fff"
     }
   },
   typography: {
-    fontFamily: 'Helvetica'
+    fontFamily: 'Poppins'
   }
 })
 
