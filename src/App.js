@@ -1,9 +1,9 @@
 import './App.css';
-import SearchAppBar from './components/navbar';
-import Cards from './components/cards';
+import SearchAppBar from './components/navbar.jsx';
+import Cards from './components/cards.jsx';
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/core/styles';
-import Welcome from './components/welcome';
+import Welcome from './components/welcome.jsx';
 
 const theme = createTheme({
   palette: {
