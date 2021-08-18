@@ -37,7 +37,7 @@ export default function ImgMediaCard() {
                             <Typography gutterBottom component="subtitle1">
                                 Vincent van Goghg
                             </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p">
+                            <Typography variant="body2" component="p">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Aenean mattis orci ut nunc vulputate, at gravida nibh rutrum.
                                 Nullam sollicitudin aliquam leo fermentum tincidunt.
